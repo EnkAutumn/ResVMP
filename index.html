@@ -4,59 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ResVMP - Official Gaming Community</title>
-    <!-- Tailwind CSS CDN untuk styling instan -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-orange-500 selection:text-white">
 
     <!-- Navbar -->
-    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-wider text-indigo-400">RES<span class="text-white">VMP</span></h1>
-            <nav class="space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-indigo-400 transition">Tentang</a>
-                <a href="#servers" class="hover:text-indigo-400 transition">Server</a>
-                <a href="https://discord.com/invite/hHp7kYdT4N" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg transition shadow-lg shadow-indigo-500/30">Join Discord</a>
+            <!-- Logo & Nama Komunitas -->
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="ResVMP Logo" class="w-10 h-10 object-contain rounded-xl border border-orange-500/30 bg-slate-900 p-1">
+                <h1 class="text-2xl font-black tracking-wider text-orange-500">RES<span class="text-blue-400">VMP</span></h1>
+            </div>
+            <nav class="space-x-6 text-sm font-medium hidden sm:block">
+                <a href="#about" class="hover:text-orange-400 transition">Tentang</a>
+                <a href="#servers" class="hover:text-orange-400 transition">Server</a>
+                <a href="https://discord.gg/KODE_DISCORD_KAMU" target="_blank" class="bg-orange-600 hover:bg-orange-500 text-white px-4 py-2 rounded-lg transition shadow-lg shadow-orange-500/20">Join Discord</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <main class="max-w-5xl mx-auto px-6 py-16 text-center flex-grow flex flex-col justify-center items-center">
-        <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
+        <!-- Logo Besar di Tengah (Opsional) -->
+        <div class="mb-6 p-2 bg-gradient-to-tr from-orange-500/20 to-blue-500/20 rounded-3xl border border-orange-500/30 shadow-2xl shadow-orange-500/10">
+            <img src="logo.png" alt="ResVMP Logo" class="w-28 h-28 md:w-36 md:h-36 object-cover rounded-2xl">
+        </div>
+
+        <span class="bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
             Welcome Gamers
         </span>
         <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Jelajahi Dunia Baru Bersama <span class="text-indigo-400">ResVMP</span>
+            Jelajahi Dunia Baru Bersama <span class="text-orange-500">ResVMP</span>
         </h2>
         <p class="text-slate-400 max-w-2xl text-base md:text-lg mb-10">
             Komunitas gaming solid tempat berkumpulnya para pemain untuk mabar, seru-seruan, dan membangun petualangan epik bersama.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#discord" class="bg-indigo-600 hover:bg-indigo-500 font-semibold px-8 py-3 rounded-xl transition shadow-lg shadow-indigo-500/30">
+            <a href="https://discord.com/invite/hHp7kYdT4N" target="_blank" class="bg-orange-600 hover:bg-orange-500 font-semibold px-8 py-3 rounded-xl transition shadow-lg shadow-orange-500/30">
                 Gabung Komunitas
             </a>
-            <a href="#servers" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold px-8 py-3 rounded-xl transition">
+            <a href="https://discord.com/invite/hHp7kYdT4N" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold px-8 py-3 rounded-xl transition">
                 Tentang Kami
             </a>
         </div>
 
         <!-- Features / Grid Cards -->
         <div id="servers" class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 w-full text-left">
-            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
-                <div class="text-indigo-400 text-2xl mb-3">🎮</div>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
+                <div class="text-orange-400 text-2xl mb-3">🎮</div>
                 <h3 class="font-bold text-lg mb-2">Mabar Rutin</h3>
                 <p class="text-slate-400 text-sm">Jadwal mabar game bareng setiap akhir pekan dengan suasana yang seru dan kompetitif.</p>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
-                <div class="text-indigo-400 text-2xl mb-3">💬</div>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition">
+                <div class="text-blue-400 text-2xl mb-3">💬</div>
                 <h3 class="font-bold text-lg mb-2">Discord Aktif</h3>
                 <p class="text-slate-400 text-sm">Komunitas yang asyik buat ngobrol, cari teman mabar baru, atau sekadar nongkrong.</p>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
-                <div class="text-indigo-400 text-2xl mb-3">🏆</div>
-                <h3 class="font-bold text-lg mb-2">Turnamen Internal</h3>
-                <p class="text-slate-400 text-sm">Event dan turnamen seru antar anggota komunitas dengan berbagai hadiah menarik.</p>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
             </div>
         </div>
     </main>
@@ -67,5 +73,4 @@
     </footer>
 
 </body>
-</html>
-
+</html> 
