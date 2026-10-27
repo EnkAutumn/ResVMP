@@ -6,6 +6,12 @@
     <title>ResVMP - Official Gaming Community</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Efek geser halus saat link diklik */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-orange-500 selection:text-white">
 
@@ -27,7 +33,7 @@
 
     <!-- Hero Section -->
     <main class="max-w-5xl mx-auto px-6 py-16 text-center flex-grow flex flex-col justify-center items-center">
-        <!-- Logo Besar di Tengah (Opsional) -->
+        <!-- Logo Besar di Tengah -->
         <div class="mb-6 p-2 bg-gradient-to-tr from-orange-500/20 to-blue-500/20 rounded-3xl border border-orange-500/30 shadow-2xl shadow-orange-500/10">
             <img src="logo.png" alt="ResVMP Logo" class="w-28 h-28 md:w-36 md:h-36 object-cover rounded-2xl">
         </div>
@@ -41,17 +47,19 @@
         <p class="text-slate-400 max-w-2xl text-base md:text-lg mb-10">
             Komunitas gaming solid tempat berkumpulnya para pemain untuk mabar, seru-seruan, dan membangun petualangan epik bersama.
         </p>
+        
+        <!-- Tombol Aksi -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://discord.com/invite/hHp7kYdT4N" target="_blank" class="bg-orange-600 hover:bg-orange-500 font-semibold px-8 py-3 rounded-xl transition shadow-lg shadow-orange-500/30">
                 Gabung Komunitas
             </a>
-            <a href="https://discord.com/invite/hHp7kYdT4N" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold px-8 py-3 rounded-xl transition">
+            <a href="#about" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold px-8 py-3 rounded-xl transition">
                 Tentang Kami
             </a>
         </div>
 
-        <!-- Features / Grid Cards -->
-        <div id="servers" class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 w-full text-left">
+        <!-- Features / Grid Cards (2 Kolom) -->
+        <div id="servers" class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 w-full max-w-2xl text-left">
             <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
                 <div class="text-orange-400 text-2xl mb-3">🎮</div>
                 <h3 class="font-bold text-lg mb-2">Mabar Rutin</h3>
@@ -62,9 +70,15 @@
                 <h3 class="font-bold text-lg mb-2">Discord Aktif</h3>
                 <p class="text-slate-400 text-sm">Komunitas yang asyik buat ngobrol, cari teman mabar baru, atau sekadar nongkrong.</p>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
-            </div>
         </div>
+
+        <!-- Bagian Tentang Kami (Section About) -->
+        <section id="about" class="mt-24 bg-slate-900/40 border border-slate-800 p-8 md:p-12 rounded-3xl text-left w-full max-w-3xl">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-orange-500 mb-4 text-center">Tentang ResVMP</h3>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed text-center">
+                ResVMP adalah komunitas gaming yang dibentuk dengan tujuan untuk bertemu orang-orang dengan passion dan hobi yang sama yaitu gaming, selain itu ResVMP juga menjadi komunitas yang nyaman untuk saling bertukar cerita, tidak hanya tentang game.
+            </p>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -73,4 +87,5 @@
     </footer>
 
 </body>
-</html> 
+</html>
+ 
