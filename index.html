@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResVMP - Official Gaming Community</title>
+    <!-- Tailwind CSS CDN untuk styling instan -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-black tracking-wider text-indigo-400">RES<span class="text-white">VMP</span></h1>
+            <nav class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-400 transition">Tentang</a>
+                <a href="#servers" class="hover:text-indigo-400 transition">Server</a>
+                <a href="#discord" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg transition shadow-lg shadow-indigo-500/30">Join Discord</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-5xl mx-auto px-6 py-16 text-center flex-grow flex flex-col justify-center items-center">
+        <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
+            Welcome Gamers
+        </span>
+        <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+            Jelajahi Dunia Baru Bersama <span class="text-indigo-400">ResVMP</span>
+        </h2>
+        <p class="text-slate-400 max-w-2xl text-base md:text-lg mb-10">
+            Komunitas gaming solid tempat berkumpulnya para pemain untuk mabar, seru-seruan, dan membangun petualangan epik bersama.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#discord" class="bg-indigo-600 hover:bg-indigo-500 font-semibold px-8 py-3 rounded-xl transition shadow-lg shadow-indigo-500/30">
+                Gabung Komunitas
+            </a>
+            <a href="#servers" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold px-8 py-3 rounded-xl transition">
+                Cek Info Server
+            </a>
+        </div>
+
+        <!-- Features / Grid Cards -->
+        <div id="servers" class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 w-full text-left">
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-indigo-400 text-2xl mb-3">🎮</div>
+                <h3 class="font-bold text-lg mb-2">Mabar Rutin</h3>
+                <p class="text-slate-400 text-sm">Jadwal mabar game bareng setiap akhir pekan dengan suasana yang seru dan kompetitif.</p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-indigo-400 text-2xl mb-3">💬</div>
+                <h3 class="font-bold text-lg mb-2">Discord Aktif</h3>
+                <p class="text-slate-400 text-sm">Komunitas yang asyik buat ngobrol, cari teman mabar baru, atau sekadar nongkrong.</p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-indigo-400 text-2xl mb-3">🏆</div>
+                <h3 class="font-bold text-lg mb-2">Turnamen Internal</h3>
+                <p class="text-slate-400 text-sm">Event dan turnamen seru antar anggota komunitas dengan berbagai hadiah menarik.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 text-center py-6 text-slate-500 text-sm">
+        <p>&copy; 2026 ResVMP Community. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
